@@ -10,13 +10,6 @@ html {
 }
 
 body,
-margin: 0;
-box-sizing: border-box;
-background-color: var(--light);
-font-family: var(--bodyFont);
-color: var(--darkgray);
-}
-
 section {
   margin: 0;
   box-sizing: border-box;
@@ -24,7 +17,6 @@ section {
   font-family: var(--bodyFont);
   color: var(--darkgray);
 }
-
 
 .text-highlight {
   background-color: var(--textHighlight);
@@ -299,7 +291,6 @@ a {
   border-top: 1px solid var(--lightgray);
 }
 
-
 input[type="checkbox"] {
   transform: translateY(2px);
   color: var(--secondary);
@@ -354,8 +345,15 @@ thead {
   article>&>a[role="anchor"] {
     color: var(--dark);
     background-color: transparent;
-    direction: rtl;
   }
+}
+
+article {
+  direction: rtl;
+}
+
+.page-header {
+  direction: rtl;
 }
 
 h1,
